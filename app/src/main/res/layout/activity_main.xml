@@ -12,14 +12,15 @@
     tools:context="com.example.android.elephant.MainActivity">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
             android:src="@drawable/elephant" />
 
         <TextView
@@ -40,6 +41,7 @@
             android:layout_below="@+id/businessName"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/marginTop"
+            android:autoLink="phone"
             android:text="@string/phoneNumber"
             android:textColor="@color/black"
             android:textStyle="bold" />
@@ -51,6 +53,7 @@
             android:layout_below="@+id/phoneNumber"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/marginTop"
+            android:autoLink="all"
             android:text="@string/facebook"
             android:textColor="@color/black"
             android:textStyle="bold" />
@@ -72,6 +75,7 @@
             android:layout_below="@+id/address"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/marginTop"
+            android:scaleType="centerInside"
             android:src="@drawable/control" />
 
     </RelativeLayout>
